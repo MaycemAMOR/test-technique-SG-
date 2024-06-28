@@ -109,7 +109,7 @@ public class Service {
         BigDecimal basis = totalRevenues.divide(familyQuotient, SCALE, CEILING);
 
         System.out.println("basis : " + basis);
-        System.out.println("GrossTaxIncomeRange : " + (computeGrossTaxIncomeRange(basis)) + " Range");
+        System.out.println("GrossTaxIncomeRange : " + (computeGrossTaxIncomeRange(basis) + 2) + " Range");
 
         // compute the taxIncome
         BigDecimal taxIncome = computeTaxIncome(computeGrossTaxIncomeRange(basis), basis);
